@@ -25,7 +25,7 @@ def download_and_compress_single(url, quality):
 
         # Compress the image
         filename = os.path.basename(url).split('?')[0]  # Extract filename from URL
-        compressed_path = "Processed_{filename}.jpg"
+        compressed_path = f"Processed_{filename}.jpg"
         
         # Saves picture locally with selected quality
         rgb_img.save(compressed_path, "JPEG", quality=quality)  # Use selected quality
